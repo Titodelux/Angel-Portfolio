@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,900;1,600&display=swap');
+
+:root {
+    font-size: 16px;
+    --font-Chackra: 'Chakra Petch', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+    --bg-nav: black;
+    --bg-body: white;
+    --bg-oran: orange;
+    --color-R1: #E40037; 
+    --color-W2: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Poppins);
+}
+
+a{
+    text-decoration: none;
+}   
+li{
+    list-style: none;
+}
+
+body{
+    background-color: var(--bg-nav);
+    min-height: 300vh;
+}
+
+.nav .logo{
+    position: fixed  ;
+    margin: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+.nav .logo img{
+    /* width: 100px; */
+    height: 100px;
+}
+.nav .logo h2{
+    color: var(--color-R1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.nav .navbar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+    font-size: 1.2em;
+}
+.nav .navbar li{
+    writing-mode: vertical-lr;
+}
+.nav .navbar a{
+    /* Intenta que el font-size sea relativo a la pantalla */
+    color: var(--color-W2);
+}
+
+
+#HOME .name{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    color: var(--color-R1);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 2.5em;
+    font-weight: 300;
+
+}
+#HOME .name span{
+    font-weight: 600;
+}

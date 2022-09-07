@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Haremos que del logo salga el menu en dispositivos móviles, menu que será el mismo que nav -->
+    <!-- Por lo tanto logo va a estar en fix en todos los dispositivos, nav solo en desktop -->
+    <div class="nav">
+        <div class="logo">
+            <!-- <div class="image"> -->
+                <img src="images/logo.png" alt="logo">
+                <h2>Portfolio</h2>
+            <!-- </div> -->
+        </div>
+        <!-- Haremos el nav del lado derecho en vertical-->
+        <ul class="navbar">
+            <li><a href="#ABOUT">About</a></li>
+            <li><a href="#PROJECTS">Projects</a></li>
+            <li><a href="#CONTACT">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="home" id="HOME">
+        <!-- Aquí cuidado, esto solo va a estar en el home -->
+        <div class="name">Pérez <span>Ángel</span></div>
+        <!-- Partimos en dos la pantalla (en desktop) la primera imagen será de decoración -->
+        <!-- Con alguna breve descripción o una frase cool (buscamos frases inspiradoras) -->
+        <!-- BUSCAMOS FRASES INSPIRADORAS QUE HAGAN EL EFECTO DE ESCRIBIR EN MAQUINA Y CAMBIEN PERIODICAMENTE -->
+        <!-- La segunda, en un fondo de contraste, sera una imagen de mí -->
+        <!-- Y por abajo un pequeño spoiler de las tecnologías que manejo (y un pelin de mentirilla) -->
+        <!-- Solo estará en el foot del home -->
+        <div class="social">
+            <logo class="1">Twitter</logo>
+            <logo class="2">Facebook</logo>
+            <logo class="2">Instagram</logo>
+            <logo class="1">LinkedIn</logo>
+        </div>
+    </div>
+
+    <!-- Este tab será una pestañita sobresaliente del About, cuando se haga scroll y esa pestaña quede arriba -->
+    <!-- El home desaparecerá por debajo Z-index y se enfocará en el home -->
+    <div class="tab-about">
+        <div class="boxTab">
+            <h3>Web Designer</h3>
+            <h4>From <span>Academlo</span></h4>
+        </div>
+    </div>
+    <div class="about" id="ABOUT">
+        <!-- Dividmos casi a la mitad/mitad -->
+        <!-- En la primera parte va a ver toda la información de mí, que me conozcan, como soy -->
+        <div class="infoAbout">
+            <h3>Yo soy... <strong>tu padre!!</strong></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quo assumenda. Amet, eveniet aperiam quisquam optio sed consectetur quaerat, saepe quo unde non eligendi? Dolores repudiandae illo quas eaque laboriosam.</p>
+        </div>
+        <!-- Y en la segunda creamos una grilla vertical tipo ladrillo y añadimos imagenes -->
+        <!-- De aquello que me gusta, o imagenes bonitas e inspiradoras -->
+        <div class="gridAbout">
+            <img src="" alt=""><img src="" alt=""><img src="" alt="">
+        </div>
+        <!-- Podríamos intentar que con un intérvalo de tiempo se muevan arriba/abajo como flotando -->
+        <!-- Y de manera graciosa que cuando el cursor esté sobre ellos se espanten y alejen -->
+    </div>
+    <div class="projects" id="PROJECTS">
+        <!-- A partir de una grilla, podríamos intentar hacer alguna  figura interesante, y rotarla para dar estilo -->
+        <!-- Allí van a estar todos mis trabajos del frontmentor, mi ecommerce -->
+        <!-- Con active hago que se traslade el proyecto a la parte inferior -->
+        <!-- Y junto a ello se abra un tab con información del proyecto, link, pagina desplegada, y curiosidades -->
+    </div>
+    <div class="contact">
+        <!-- Sencilla, un extremo con los inputs y el otro una ventana con mucha info de contacto -->
+    </div>
+    <div class="foot">
+        <!-- Para no dejar mi página en el aire, un sencillo foot donde se recuerdan mis redes sociales -->
+        <!-- Terminamos con una frase inspiracional y damos créditos a Academlo -->
+        <!-- Podemos poner un pequeño botón para que el usuario regrese a la pestaña principal -->
+    </div>
+</body>
+</html>
