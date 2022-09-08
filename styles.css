@@ -7,8 +7,10 @@
     --bg-nav: black;
     --bg-body: white;
     --bg-oran: orange;
+    --bg-image: #0b0917;
     --color-R1: #E40037; 
     --color-W2: white;
+    --z-logo: 1000;
 }
 
 *{
@@ -16,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-Poppins);
+
 }
 
 a{
@@ -32,6 +35,7 @@ body{
 
 .nav .logo{
     position: fixed  ;
+    z-index: var(--z-logo);
     margin: 1em;
     display: flex;
     justify-content: flex-start;
@@ -68,7 +72,10 @@ body{
 }
 
 
-#HOME .name{
+#HOME {
+    min-height: 100vh;
+}
+#HOME .headerHome{
     position: absolute;
     top: 0;
     right: 0;
@@ -81,6 +88,68 @@ body{
     font-weight: 300;
 
 }
-#HOME .name span{
+#HOME .headerHome span{
     font-weight: 600;
+}
+#HOME .mainHome{
+    /* padding-top: 10%; */
+    height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: var(--color-W2);
+}
+#HOME .mainHome .infoHome{
+    width: 50%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#HOME .mainHome .imageHome{
+    position: relative;
+    padding: 2em;
+    width: 50%;
+    /* background-color: var(--bg-image); */
+    background: linear-gradient(90deg,var(--bg-image), black);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#HOME .mainHome .imageHome > img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+}
+
+#HOME .mainHome .imageHome .social{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+    
+}
+#HOME .mainHome .imageHome .social img{
+    height: 40px;
+    filter: invert(100%) sepia(0%) saturate(3%) hue-rotate(125deg) brightness(101%) contrast(101%);
+}
+#HOME .mainHome .imageHome .social img:hover{
+    filter: invert(23%) sepia(94%) saturate(5857%) hue-rotate(336deg) brightness(84%) contrast(116%);
+}
+#HOME .footHome{
+    height: 30vh;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#HOME .footHome img{
+    width: 120px ;
+}
+#HOME .footHome #JAVAs{
+    filter: invert(72%) sepia(85%) saturate(950%) hue-rotate(359deg) brightness(103%) contrast(104%);
 }
