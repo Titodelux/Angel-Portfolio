@@ -1,14 +1,12 @@
-// import pkg from "./data.js"
-// const frases = pkg
 
 const frases = [
-    // "Lo que conocemos es una gota, lo que no conocemos es un oceano.",
-    // "El aprendizaje es la ciencia, todo lo demás es información.",
+    "Lo que conocemos es una gota, lo que no conocemos es un oceano.",
+    "El aprendizaje es la ciencia, todo lo demás es información.",
     "La ciencia nunca resuelve un problema sin crear otros 10 más (así como el css).",
-    // "Esfuerzate por progresos, no por perfección.",
-    // "Existen oportunidades secretas dentro de cada fracaso.",
-    // "Si el plan no funciona, cambia el plan, pero no la meta.",
-    // ".   .   ."
+    "Esfuerzate por progresos, no por perfección.",
+    "Existen oportunidades secretas dentro de cada fracaso.",
+    "Si el plan no funciona, cambia el plan, pero no la meta.",
+    ".   .   ."
 ]
 const mecano = document.getElementById("mecano")
 const logo = document.querySelector(".logo")
@@ -42,6 +40,12 @@ function mecanography() {
 }
 
 logo.addEventListener("click", function(){
-    console.log(this);
+    console.log(this.firstElementChild);
+    this.firstElementChild.classList.toggle("activate")
+    if(this.firstElementChild.classList.contains("activate")){
+        console.log("holis");
+        this.parentElement.firstElementChild.style.transform = "translateY(0%)"
+    }
+    else{this.parentElement.firstElementChild.style.transform = "translateY(-100%)"}
 })
 mecanography()
