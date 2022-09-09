@@ -415,17 +415,15 @@ body{
         display: none;
     }
     #HOME .mainHome{
-        height: 85vh;
+        height: 100vh;
+        padding-top: calc(100px + 2.5rem);
+        flex-direction: column;
     }
     #HOME .mainHome .imageHome{
         width: 100%;
     }
     #HOME .mainHome .imageHome .social{
         justify-content: flex-start;
-    }
-    #HOME .mainHome{
-        padding-top: calc(100px + 5em);
-        flex-direction: column;
     }
     #HOME .mainHome .infoHome {
         width: 100%;
