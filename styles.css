@@ -389,13 +389,18 @@ body{
     justify-content: center;
     font-family: var(--font-Poppins);
     background: linear-gradient(black, var(--bg-image) 30px, var(--color-R1)600px)
-
 }
 #CONTACT h2{
     padding-left: 2rem;
 }
 #CONTACT .boxContact{
     padding: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    gap: 2rem; */
+}
+#CONTACT .boxContact p{
+    margin-bottom: 2rem;
 }
 
 
