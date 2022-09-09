@@ -11,12 +11,12 @@
     <!-- Haremos que del logo salga el menu en dispositivos móviles, menu que será el mismo que nav -->
     <!-- Por lo tanto logo va a estar en fix en todos los dispositivos, nav solo en desktop -->
     <div class="nav">
-        <div class="logo">
-            <!-- <div class="image"> -->
+        <a href="#HOME">
+            <div class="logo">
                 <img src="images/logo.png" alt="logo">
                 <h2>Portfolio</h2>
-            <!-- </div> -->
-        </div>
+            </div>
+        </a>
         <!-- Haremos el nav del lado derecho en vertical-->
         <ul class="navbar">
             <li><a href="#ABOUT">About</a></li>
@@ -39,16 +39,22 @@
             <div class="imageHome">
                 <img src="images/yosta.png" alt="Mi foto">
                 <div class="social">
-                    <img src="images/twitter.png" alt="">
-                    <img src="images/facebook.png" alt="">
-                    <img src="images/instagram.png" alt="">
-                    <img src="images/linkedin.png" alt="">
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt=""></a>
+                    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a>
+                    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt=""></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt=""></a>
                 </div>
             </div>
         </div>
         <!-- Y por abajo un pequeño spoiler de las tecnologías que manejo (y un pelin de mentirilla) -->
         <!-- Solo estará en el foot del home -->
         <div class="footHome">
+            <div class="footBox">
+                <div class="boxTab">
+                    <h3>Web Designer</h3>
+                    <h4>From <span>Academlo</span></h4>
+                </div>
+            </div>
             <div class="footBox"><img src="images/html.png" alt="HTML"><div class="infoBox">HTML</div></div>
             <div class="footBox"><img src="images/css-3.png" alt="CSS"><div class="infoBox">CSS</div></div>
             <div class="footBox"><img src="images/java-script.png" alt="JS" id="JAVAs"><div class="infoBox">JAVASCRIPT</div></div>
@@ -58,12 +64,7 @@
 
     <!-- Este tab será una pestañita sobresaliente del About, cuando se haga scroll y esa pestaña quede arriba -->
     <!-- El home desaparecerá por debajo Z-index y se enfocará en el home -->
-    <div class="tab-about">
-        <div class="boxTab">
-            <h3>Web Designer</h3>
-            <h4>From <span>Academlo</span></h4>
-        </div>
-    </div>
+    
     <div class="about" id="ABOUT">
         <!-- Dividmos casi a la mitad/mitad -->
         <!-- En la primera parte va a ver toda la información de mí, que me conozcan, como soy -->
@@ -85,24 +86,35 @@
         <!-- Y de manera graciosa que cuando el cursor esté sobre ellos se espanten y alejen -->
     </div>
     <div class="projects" id="PROJECTS">
+        <h2>Projects</h2>
         <!-- A partir de una grilla, podríamos intentar hacer alguna  figura interesante, y rotarla para dar estilo -->
         <!-- Allí van a estar todos mis trabajos del frontmentor, mi ecommerce -->
         <!-- Con active hago que se traslade el proyecto a la parte inferior -->
         <!-- Y junto a ello se abra un tab con información del proyecto, link, pagina desplegada, y curiosidades -->
         <div class="gridProjects">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <a href="https://titodelux.github.io/Nft-Card/" target="_blank"><img src="images/NftPreview.png" alt=""></a>
+            <a href="https://titodelux.github.io/Product-preview-card/" target="_blank"><img src="images/ProductPreview.png" alt=""></a>
+            <a href="https://titodelux.github.io/Time-traking/" target="_blank"><img src="images/TimeTracking.png" alt=""></a>
+            <a href=""><img src="images/OrderSummary.png" alt=""></a>
+            <a href="https://titodelux.github.io/Interactive-Rating/" target="_blank"><img src="images/RatingComponent.png" alt=""></a>
             <div class="closeGrid">
-                <img src="close.png" alt="">
+                <img src="images/cancel.png" alt="">
             </div>
         </div>
 
     </div>
-    <div class="contact">
+    <div class="contact" id="CONTACT">
         <!-- Sencilla, un extremo con los inputs y el otro una ventana con mucha info de contacto -->
+        <h2>GET IN TOUCH</h2>
+        <div class="boxContact">
+            <h3>Contact Information</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae qui dolor fugiat nihil soluta corporis similique, maiores aut dolore modi quidem voluptatum asperiores sit ipsa minus obcaecati ducimus! Magnam, reprehenderit.</p>
+            <h4>Correo electrónico</h4>
+            <p>angelperez.r007@gmail.com</p>
+            <h4>Teléfono</h4>
+            <p>0424-3583439</p>
+            
+        </div>
     </div>
     <div class="foot">
         <!-- Para no dejar mi página en el aire, un sencillo foot donde se recuerdan mis redes sociales -->
